@@ -432,6 +432,11 @@ img {
 /*==================== SKILLS ====================*/
 .skills__container {
   row-gap: 0;
+  width: 50%;
+}
+
+.skills__content{
+  padding-left: 2rem;
 }
 
 .skills__header {
@@ -795,7 +800,8 @@ img {
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
-  row-gap: 3rem;
+  padding: 0 2.5rem 0 2.5rem;
+  width: 100%;
 }
 
 .contact__information {
@@ -846,6 +852,7 @@ img {
 }
 /*==================== FOOTER ====================*/
 .footer {
+  height: 200px;
   padding-top: 2rem;
 }
 
@@ -855,7 +862,7 @@ img {
 
 .footer__bg {
   background-color: var(--first-color-second);
-  padding: 2rem 0 3rem;
+  padding:0 3rem;
 }
 
 .footer__title {
@@ -878,6 +885,7 @@ img {
 }
 
 .footer__soshal {
+  text-align: right;
   font-size: 1.25rem;
   margin-right: var(--mb-1-5);
 }
@@ -890,7 +898,6 @@ img {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--text-color-light);
-  margin-top: var(--mb-3);
 }
 
 .footer__title, .footer__subtitle, .footer__link, .footer__soshal {
@@ -1006,10 +1013,10 @@ img {
   .about__container,
   .skills__container,
   .portfolio__content,
-  .project__container,
-  .contact__container,
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
+  .project__container
+  /* .contact__container, */
+  /* .footer__container { */{
+    grid-template-columns: repeat(1, 1fr);
   }
   .qualification__sections {
     display: grid;
@@ -1109,6 +1116,12 @@ img {
   .services__modal-content {
     width: 450px;
   }
+  .skills__container{
+    width: fit-content
+  }
+  .skills__content{
+    padding-left: 1rem;
+  }
   .portfolio__img {
     width: 320px;
   }
@@ -1132,7 +1145,7 @@ img {
     padding-top: .8rem;
   }
   .footer__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .footer__bg {
     padding: 3rem 0 3.5rem;
@@ -1143,9 +1156,6 @@ img {
   }
   .footer__socials {
     justify-self: flex-end;
-  }
-  .footer__copy {
-    margin-top: 4.5rem;
   }
 }
 
@@ -1185,9 +1195,6 @@ img {
   }
   .testimonial__description {
     margin-bottom: 4rem;
-  }
-  .contact__form {
-    width: 460px;
   }
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
