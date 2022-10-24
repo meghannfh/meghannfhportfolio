@@ -7,8 +7,6 @@
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         
-        <!--==================== SWIPER CSS====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
         <!--==================== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -160,145 +158,66 @@
                 <h2 class="section__title">Languages & Frameworks</h2>
 
                 <div class="skills__container container grid">
-                    <div>
                         <!--=============== SKILLS 1 ===============-->
-                        <div class="skills__content skills__open">
-                            <div class="skills__header">
-                                <i class="uil uil-arrow skills__icon"></i>
-    
-                                <div>
-                                    <h1 class="skills__title">Frontend</h1>
-                                </div>
-                            </div>
-    
-                            <div class="skills__list grid">
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">HTML <i class="uil uil-html5"></i></h3>
-                                    </div>
-                                </div>
-    
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">CSS <i class="uil uil-css3-simple"></i></h3>
-                                    </div>
-                                </div>
-    
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">JavaScript <i class="uil uil-java-script"></i></h3>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <div class="skills__titles">
-                                        <h3 class="skills__name">React <i class="uil uil-react"></i></h3>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="skills__content">
+                            <h3 class="skills__name">HTML <i class="uil uil-html5"></i></h3>
+                            <h3 class="skills__name">CSS <i class="uil uil-css3-simple"></i></h3>
+                            <h3 class="skills__name">JavaScript <i class="uil uil-java-script"></i></h3>
+                            <h3 class="skills__name">React <i class="uil uil-react"></i></h3>
+                            <h3 class="skills__name">Node <i class="uil uil-java-script"></i></h3>
+                            <h3 class="skills__name">Express <i class="uil uil-java-script"></i></h3>
+                            <h3 class="skills__name">MongoDB</h3>
                         </div>
-                    </div>
-    
-                       <!--=============== SKILLS 3 ===============-->
-                       <div class="skills__content skills__open">
-                        <div class="skills__header">
-                            <i class="uil uil-brackets-curly skills__icon"></i>
-
-                            <div>
-                                <h1 class="skills__title">Backend</h1>
-                            </div>
-
-                        </div>
-
-                        <div class="skills__list grid">
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Node <i class="uil uil-java-script"></i></h3>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Express <i class="uil uil-java-script"></i></h3>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MongoDB</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </section>
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
+                <h2 class="section__title">Projects</h2>
 
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--=============== PORTFOLIO 1 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio1.png" alt="" class="portfolio__img">
+                <div class="portfolio__container container">
+                    <div class="portfolio__content">
+                        <div class="portfolio__img-container">
+                            <a href="https://aparebeautysalon.netlify.app/"><img src="assets/img/portfolio1.png" alt="" class="portfolio__img"></a>
+                        </div>
+
+                        <div class="portfolio__data">
+                            <h3 class="portfolio__title">A'Pare Beauty Salon</h3>
+                            <p class="portfolio__description">Salon landing page. sdfasfd adfs affasd . asdfasdf asdf. adsf. asdf. adfad fdasff.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__content">
+                            <div class="portfolio__img-container">
+                                <a href="https://gomiapi-production.up.railway.app/"><img src="assets/img/project3.png" alt="" class="portfolio__img"></a>
+                            </div>
     
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">A'Pare Beauty Salon</h3>
-                                <p class="portfolio__description">Salon landing page.</p>
-                                <a href="https://aparebeautysalon.netlify.app/" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
+                                <h3 class="portfolio__title">GomiGata</h3>
+                                <p class="portfolio__description">GomiGata is user-friendly public search engine supported by a MongoDB database of disposable items, their recycling specification and disposal instructions.</p>
                             </div>
                         </div>
-    
-                        <!--=============== PORTFOLIO 2 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio3.png" alt="" class="portfolio__img">
-    
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">So English 英語教室</h3>
-                                <p class="portfolio__description">Responsive and user-friendly landing page for client's online English lessons.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    In Progress
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
+
+                        <div class="portfolio__content">
+                            <div class="portfolio__img-container">
+                                <a href="https://botw-encyclopedia.netlify.app/"><img src="assets/img/portfolio2.png" alt="" class="portfolio__img img3"></a>
                             </div>
-                        </div>
-    
-                        <!--=============== PORTFOLIO 3 ===============-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/portfolio2.png" alt="" class="portfolio__img">
     
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">The Encyclopedia of Hyrule</h3>
                                 <p class="portfolio__description">Fully responsive Web application that utilizes the Breath of the Wild public API. Users are able to search creatures, weapons and equipment, etc. featured in the popular Nintendo game franchise, <i>The Legend of Zelda: Breath of the Wild</i>.</p>
-                                <a href="#" class="button button--flex button--small portfolio__button">
-                                    Demo
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-
-                    <div class="swiper-pagination"></div>
+                
                 </div>
             </section>
 
             <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">Contact Me</h2>
+            <!-- <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2> -->
                 <!--<span class="section__subtitle">Get in touch</span>-->
 
-                <div class="contact__container container">
+                <!-- <div class="contact__container container">
                     <form action="https://getform.io/f/98a9234f-b460-4f2b-8dd4-5f8e6e845c69" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
@@ -328,7 +247,7 @@
                     </form>
                 </div>
 
-            </section>
+            </section> -->
         </main>
 
         <!--==================== FOOTER ====================-->
@@ -362,10 +281,5 @@
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
     </body>
 </html>
