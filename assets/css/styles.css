@@ -245,7 +245,7 @@ img {
 }
 
 /* show menu */
-.show-menu {
+.nav__menu.show-menu {
   bottom: 0;
 }
 

@@ -70,60 +70,60 @@ tabs.forEach(tab => {
 })
 
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal'),
-      modalBtns = document.querySelectorAll('.services__button'),
-      modalCloses = document.querySelectorAll('.services__modal-close')
+// const modalViews = document.querySelectorAll('.services__modal'),
+//       modalBtns = document.querySelectorAll('.services__button'),
+//       modalCloses = document.querySelectorAll('.services__modal-close')
 
-let modal = function(modalClick){
-    modalViews[modalClick].classList.add('active-modal')
-}
+// let modal = function(modalClick){
+//     modalViews[modalClick].classList.add('active-modal')
+// }
 
-modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', () => {
-        modal(i)
-    })
-})
+// modalBtns.forEach((modalBtn, i) => {
+//     modalBtn.addEventListener('click', () => {
+//         modal(i)
+//     })
+// })
 
-modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener('click', () => {
-        modalViews.forEach((modalView) => {
-            modalView.classList.remove('active-modal')
-        })
-    })
-})
+// modalCloses.forEach((modalClose) => {
+//     modalClose.addEventListener('click', () => {
+//         modalViews.forEach((modalView) => {
+//             modalView.classList.remove('active-modal')
+//         })
+//     })
+// })
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper('.portfolio__container', {
-    cssMode: true,
-    loop: true,
+// let swiperPortfolio = new Swiper('.portfolio__container', {
+//     cssMode: true,
+//     loop: true,
 
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-})
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+//     pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//     },
+// })
 
 /*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper('.testimonial__container', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
+// let swiperTestimonial = new Swiper('.testimonial__container', {
+//     loop: true,
+//     grabCursor: true,
+//     spaceBetween: 48,
 
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-    breakpoints: {
-        568: {
-            slidesPerView: 2,
-        },
-    }
-})
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//         dynamicBullets: true,
+//     },
+//     breakpoints: {
+//         568: {
+//             slidesPerView: 2,
+//         },
+//     }
+// })
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -190,29 +190,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-/*==================== CONTACT SUBMISSION ====================*/ 
-
-var form = document.getElementById("form");
-form.addEventListener("submit", formSubmit);
-
-function formSubmit(e) {
-    e.preventDefault();
-
-    const formData = new FormData();
-    formData.append(
-        'name',
-        document.querySelector('input[name="name"]').value
-    )
-    formData.append(
-        'email',
-        document.querySelector('input[name="email"]').value
-    )
-
-    fetch("https://getform.io/f/98a9234f-b460-4f2b-8dd4-5f8e6e845c69", {
-            method: "POST",
-            body: formData,
-    })
-    .then(response => console.log(response))
-    .catch(error => console.log(error))
-}
