@@ -555,17 +555,8 @@ img {
 
 /*==================== FOOTER ====================*/
 .footer {
-  height: 200px;
-  padding-top: 2rem;
-}
-
-.footer__container {
-  row-gap: 3.5rem;
-}
-
-.footer__bg {
-  background-color: var(--first-color-second);
-  padding:0 3rem;
+  background-color: var(--first-color);
+  padding: 2rem 3rem;
 }
 
 .footer__title {
@@ -589,8 +580,8 @@ img {
 
 .footer__soshal {
   text-align: right;
-  font-size: 1.25rem;
-  margin-right: var(--mb-1-5);
+  font-size: var(--h1-font-size);
+  /* margin-right: var(--mb-1-5); */
 }
 
 .footer__soshal:hover {
